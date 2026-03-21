@@ -1,0 +1,15 @@
+@startuml
+package "update-mcp-configuration" {
+    class "Config Server" {
+        + add_mcp_server(name, command, args, cwd, env)
+    }
+    
+    class "Settings Registry" {
+        - SETTINGS_PATH
+        + readSettings()
+        + writeSettings(data)
+    }
+    
+    "Config Server" --> "Settings Registry" : "Updates"
+}
+@enduml

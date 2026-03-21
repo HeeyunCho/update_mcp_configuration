@@ -1,0 +1,12 @@
+{
+  "name": "update-mcp-configuration",
+  "version": "1.0.0",
+  "description": "MCP server registration and configuration management for Gemini CLI.",
+  "main": "dist/index.js",
+  "tools": [
+    {
+      "name": "add_mcp_server",
+      "description": "Add or update an MCP server configuration in settings.json"
+    }
+  ]
+}
